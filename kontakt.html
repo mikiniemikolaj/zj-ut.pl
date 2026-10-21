@@ -54,7 +54,46 @@
                     </ul>
                 </section>
 
-                
+                <section>
+                    <h2 id="formularz-tytul">Napisz do nas</h2>
+                    <form id="contact-form" action="#" method="post" novalidate>
+                        <p>
+                            <label for="imie">Imię i nazwisko</label>
+                            <input type="text" id="imie" name="from_name" autocomplete="name" required>
+                        </p>
+                        <p>
+                            <label for="email">Adres e-mail</label>
+                            <input type="email" id="email" name="reply_to" autocomplete="email" required>
+                        </p>
+                        <p>
+                            <label for="telefon">Telefon</label>
+                            <input type="tel" id="telefon" name="phone" autocomplete="tel" required>
+                        </p>
+                        <p>
+                            <label for="temat">Czego dotyczy zapytanie</label>
+                            <select id="temat" name="subject" required>
+                                <option value="">Wybierz temat</option>
+                                <option value="transport">Transport</option>
+                                <option value="roboty-ziemne">Roboty ziemne</option>
+                                <option value="agrotechnika">Usługi agrotechniczne</option>
+                                <option value="zakup-produktów">Zakup zboża, rzepaku, kukurydzy lub ryb</option>
+                                <option value="inne">Inne</option>
+                            </select>
+                        </p>
+                        <p>
+                            <label for="wiadomosc">Wiadomość</label>
+                            <textarea id="wiadomosc" name="message" rows="6" required></textarea>
+                        </p>
+                        <p>
+                            <input type="checkbox" id="zgoda" name="consent" required>
+                            <label for="zgoda">Zgadzam się na przetwarzanie danych w celu odpowiedzi na zapytanie.</label>
+                        </p>
+                        <p>
+                            <button class="btn btn-primary" type="submit">Wyślij wiadomość</button>
+                        </p>
+                        <p id="form-status" role="status"></p>
+                    </form>
+                </section>
             </div>
         </div>
     </main>
